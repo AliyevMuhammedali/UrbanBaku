@@ -1,44 +1,59 @@
-// Центр карты — Баку
+// Создание карты и установка центра на Баку
 const map = L.map('map').setView([40.4093, 49.8671], 13);
 
-// Спутниковый слой Esri
+// Спутниковый слой от Esri
 const satellite = L.tileLayer(
-  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+  {
     attribution: 'Tiles &copy; Esri',
     maxZoom: 19
   }
 );
 
-// Слой улиц от OSM
+// Уличный слой от OpenStreetMap
 const streets = L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
     attribution: '&copy; OpenStreetMap contributors',
-    maxZoom: 19
+    maxZoom: 19,
+    opacity: 0.5 // делаем слой полупрозрачным, чтобы видно было спутник
   }
 );
 
-// Добавим спутник + улицы (в виде гибридного слоя)
+// Добавление гибридного слоя на карту
 satellite.addTo(map);
 streets.addTo(map);
 
-// Контрол выбора слоёв
+// Контрол переключения базовых слоёв
 const baseMaps = {
   "Спутник": satellite,
   "Улицы": streets
 };
-
 L.control.layers(baseMaps).addTo(map);
 
-// Подключение GeoJSON
+// Загрузка GeoJSON с метками заброшенных мест
 fetch('locations.geojson')
-  .then(res => res.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Не удалось загрузить locations.geojson");
+    }
+    return response.json();
+  })
   .then(data => {
     L.geoJSON(data, {
       onEachFeature: function (feature, layer) {
-        const props = feature.properties;
-        const name = props.name || 'Без названия';
-        const description = props.description || '';
+        const props = feature.properties || {};
+        const name = props.name || "Без названия";
+        const description = props.description || "";
         layer.bindPopup(`<strong>${name}</strong><br>${description}`);
+      },
+      pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+          title: feature.properties?.name || ""
+        });
       }
     }).addTo(map);
+  })
+  .catch(error => {
+    console.error("Ошибка при загрузке GeoJSON:", error);
   });
