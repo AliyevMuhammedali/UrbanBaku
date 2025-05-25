@@ -1,0 +1,6 @@
+abandoned-baku-map/
+├── index.html
+├── map.js
+├── style.css
+└── data/
+    └── locations.geojson
