@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Заброшенный завод",
+        "description": "Старый текстильный завод, закрыт с 1990-х годов"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.8671, 40.4093]
+      }
+    }
+  ]
+}
