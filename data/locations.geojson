@@ -2991,7 +2991,3021 @@
           50.1035253,
           40.4915629
         ],
+     {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          49.810524099999995,
+          40.3518459
+        ],
         "type": "Point"
+      },
+      "properties": {
+        "name": "Вилла"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.385422,
+          42.790605
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Третий ракетный дивизион Р-14У"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8430811,
+          40.387788799999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенная Психиатрическая Больница"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.6711944,
+          40.573242
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Профессионально-техническое училище №35"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.096920999999995,
+          40.373144499999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Магазины"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          48.9198835,
+          52.0479224
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Сельская школа в Заречном"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8858901,
+          40.4075099
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9238711,
+          41.6180677
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8910641,
+          40.4235235
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Сборный эвакуационный пункт № 41"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.1561112,
+          38.9963889
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Kurinskaya Kosa",
+        "name": "Заброшенный Город"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.568056,
+          40.420277999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Огневой Город Бакинского ВОКУ"
+      },
+      "type": "Feature",
+      "id": 12
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8784105,
+          40.3929566
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Спортивный Зал"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9533644,
+          51.498436999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное ПТУ"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.890328499999995,
+          40.4132015
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CV7R+74P Бакэлектроштамп, Araz, Bakı, Азербайджан",
+        "name": "Бакэлектроштамп"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1253199,
+          40.3751679
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Окопы ПВО"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.982647,
+          40.287079
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Два Корабля И Пара Зданий"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.135834499999994,
+          40.4869762
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Учреждение"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.2184416,
+          51.5446795
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Территория комбината плащевых тканей"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.939341899999995,
+          40.3839885
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Амбары"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.7343899,
+          52.0952911
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "церковь Николая Чудотворца, Гремячка, Саратовская обл., Россия, 412582",
+        "name": "Свято-Никольский храм в Гремячке"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.880821399999995,
+          40.403113499999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Комнаты"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.875975999999994,
+          40.393786999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Корпус Больницы"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.956293599999995,
+          40.3480206
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "8XX4+6G3 Respublika Narkoloji Mərkəzi, Baku, Азербайджан",
+        "name": "Республиканский Наркологический Центр"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.830473999999995,
+          40.353377099999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Реставрационное агентство/Архив"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8240534,
+          40.419885
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CR9F+XJ3 Botanical Garden, Bakı, Азербайджан",
+        "name": "Заброшенный Ботанический Сад"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.0150053,
+          46.2471477
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "3й ветряк, Unnamed Road, Дорожный, Респ. Калмыкия, Россия, 359189",
+        "name": "Калмыцкая Ветроэлектростанция"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.7831494,
+          41.7454275
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Аквапарк Тбилиси, 3 Vakhtang Ninua St, Tbilisi 0103, Грузия",
+        "name": "Аквапарк"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.160966699999996,
+          51.466969899999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Завод Химволокно"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.354836899999995,
+          40.7857383
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ангар В Хызинском Районе"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9720642,
+          40.3769122
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Кирпичный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.3408008,
+          40.456182299999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Завод Хлеба"
+      },
+      "type": "Feature",
+      "id": 31
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.466063999999996,
+          40.124078999999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Здания (МБ Военный Объект)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.820346,
+          40.3216171
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бакинский Тракторный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8586496,
+          40.3856891
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Насосная Железнодорожной Станции"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.658203,
+          40.435748
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          42.8353004,
+          41.7491747
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "The Complex Of Sanatorium Vardzia building 1 Cultural Heritage, Kutaisi-Baghdati-Abastumani-Benara, Abastumani, Грузия",
+        "name": "Резиденция семьи Романовых в Абастумани"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.2107988,
+          46.4545776
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Аэродром Троицкое, Троицкое, Респ. Калмыкия, Россия, 359180",
+        "name": "Военный аэродром «Троицкое»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.7442383,
+          51.8646414
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Аэропорт Балаково, Саратовская обл., Россия, 413827",
+        "name": "Аэропорт Балаково"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.0057883,
+          41.6404527
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Военная часть № 2021 в Ахалцихе"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.839152,
+          51.357046
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Фабрика «Красный текстильщик»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9088924,
+          40.412319499999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Ангар"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8788936,
+          40.41742
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Завод Бытовых Кондиционеров"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.858929599999996,
+          40.381282399999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.0892901,
+          40.3929615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ангар"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9567444,
+          40.416097
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Дом Качества"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9349303,
+          40.3824294
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Убежище Гражданской Обороны"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8020614,
+          40.4361348
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Кладбище Локомотивов / Убежище"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9599701,
+          40.3540711
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бывшая Военная Часть"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.0303038,
+          51.5310961
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "ул. Максима Горького, 32, Саратов, Саратовская обл., Россия, 410028",
+        "name": "Гостиница «Россия»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.889367,
+          40.418023999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Шинный Завод Имени: «Ази Асланова»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9781726,
+          40.432142
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CXJH+V73 Qədimi Hamam, Bülbülə, Азербайджан",
+        "name": "Баня"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.893171699999996,
+          40.405935199999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Теретория Предприятия"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.4869729,
+          41.6010862
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "JF2P+CQ მადანი Ore, Vake, Грузия",
+        "name": "Пионерский лагерь на водохранилище Алгет"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8282676,
+          40.3658511
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Lermontov Parkı, 9 Jafarov Gardashlari, Bakı, Азербайджан",
+        "name": "Парк «Лермонтов»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.151097299999996,
+          40.4882631
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Парк"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.881667,
+          51.432778
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Лечебно-трудовой профилакторий"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8070765,
+          40.3425872
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "ЗСГО «Лабиринт»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.1777081,
+          43.1747516
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Чеченское ШПУ"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.196576799999995,
+          40.5038242
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Şüvəlan Mayakı (M.Muxtarov 1913cü il), Şüvәlan çimәrliyi, Азербайджан",
+        "name": "Маяк в Шувилянах"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.4589998,
+          41.549207599999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Военная база № 13204"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.0201618,
+          51.536820299999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Дом Художника, ул. Московская, 125, Саратов, Саратовская обл., Россия, 410012",
+        "name": "Дом Художника"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.825094,
+          40.308434
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Кладбище Кораблей (Биби-эйбат)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          34.061571799999996,
+          26.6393897
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Salem Express Wreck, Египет",
+        "name": "Затонувший паром «Салем Экспресс»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8837088,
+          40.4024137
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Пустырь"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9540031,
+          51.5886601
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Завод Рефлектор, просп. 50 Лет Октября, 101, Саратов, Саратовская обл., Россия, 410033",
+        "name": "Завод «Рефлектор»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.214444,
+          51.553332999999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Дом культуры «Текстильщик»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8407945,
+          40.378146799999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "9RHR+783 Здание бывшей императорской мужской гимназии, Городская Клиническая Больница №4, Bakı, Азербайджан",
+        "name": "Городская клиническая больница № 4"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8246134,
+          40.3647953
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.1393784,
+          51.5580193
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Конюшня усадьбы купца Дьякова"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.1443429,
+          51.5276259
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Балашовский мясоконсервный комбинат, Тихий пер., 9, Балашов, Саратовская обл., Россия, 412315",
+        "name": "Мясоконсервный комбинат"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.995992,
+          51.556602399999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Саратовский институт РХБ защиты"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.8844317,
+          41.660729499999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "MV6M+7QV Marabda, E117, Tbilisi, Грузия",
+        "name": "Ресторан «Марабда»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8595951,
+          40.3800662
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бакинский вагоноремонтный завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.547109,
+          39.823755
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Нефтяные Вышки"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9398585,
+          40.362978
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Зерновой элеватор"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.5233284,
+          42.9781647
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Консервный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.6914441,
+          40.4219571
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ангары (треб. развед.)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.800271699999996,
+          40.436090899999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Церковь святого апостола Варфоломея"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.882255799999996,
+          40.4064146
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Пустырь"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          33.8249372,
+          27.170904099999998
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "5RCF+9X7 El Samaka Beach Club, Hurghada 1, Red Sea Governorate 1962615, Египет",
+        "name": "Отель \"El Samaka Beach\""
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.955225399999996,
+          41.5499729
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "GXX4+X3Q Верхняя станция заброшенной канатной дороги, Rustavi, Грузия",
+        "name": "Станция канатной дороги в Рустави"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.0282182,
+          40.436900099999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Пустырь"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.4282476,
+          40.8079557
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Военная База + Аэродром"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.644918999999994,
+          40.543161
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Предприятие"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          42.714621799999996,
+          41.6755779
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Больница в Адигени"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.809417499999995,
+          40.8716863
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "VRC5+MQ Gabala Radar Station, Soltannuxa, Азербайджан",
+        "name": "Габалинская радиолокационная станция"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.154001099999995,
+          40.3625641
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный КПП"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.831013999999996,
+          40.354459999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Деревня Сатанистов"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.7893718,
+          41.7435654
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Дом бракосочетаний в городе Гурджаани"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.372693299999995,
+          41.3809324
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Zemo Kedi, 1600, Грузия",
+        "name": "Авиабаза «Шираки»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9177987,
+          40.2936748
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "База ПВО СССР"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.038505,
+          51.5244374
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Экспресс Букет 24, ул. Чернышевского, 134, Саратов, Саратовская обл., Россия, 410000",
+        "name": "Медико-санитарная часть"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1146287,
+          40.4816955
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "F4J7+MJ3, Mərdəkan, Азербайджан",
+        "name": "Заброшенные Ангары"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.0079249,
+          51.51613
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Саратовский завод приборных устройств"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.2986094,
+          51.5316662
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Военный аэродром вблизи города Балашов"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.7954493,
+          41.743546599999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Гостиница в центре Гурджаани"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.3306517,
+          40.462942399999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенная Больница/Санаторий"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9401982,
+          40.4321094
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Кладбище Лондонских Такси"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.1349296,
+          51.5567492
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Балашовский элеватор"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8786968,
+          40.379914
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Торговый центр «Амай», 23 8 November Ave, Baku 1000, Азербайджан",
+        "name": "ТЦ «Амай»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.7558882,
+          40.4411981
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Пивной Завод"
+      },
+      "type": "Feature",
+      "id": 101
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8557693,
+          40.435316199999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Azərbaycan Beynəlxalq Universteti, 62c İlham Hacıyev Küçəsi, Bakı, Азербайджан",
+        "name": "Заброшенный Международный Университет"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1689735,
+          40.4853039
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Вилла Гаджиева"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8992137,
+          40.3862252
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "ЗПУ в Хатаинском районе"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1697899,
+          40.4872393
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "F5P9+VWV XIX əsrə aid İmarət, Daxili İşlər Nazirliyinin Polis Akademiyası, Mardakan, Азербайджан",
+        "name": "Вилла Сафаралиева"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.166639599999996,
+          40.4971928
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Санаторий «Бакинец»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.009972399999995,
+          51.6312717
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бетонный завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9216668,
+          40.2938889
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Ostrov Nargin",
+        "name": "Остров «Нарген»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.863298199999996,
+          40.3801239
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Телефонная Станция"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8186264,
+          40.3795316
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Каспаровская Больница"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.9972557,
+          42.3034087
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Гамсутль, Главная, Гамсутль, Респ. Дагестан, Россия, 368354",
+        "name": "Аул Гамсутль"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8413733,
+          40.43703
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CRPR+RG9 Firidun bəy Köçərli adına Respublika Uşaq Kitabxanası 3 saylı Filial, Bakı, Азербайджан",
+        "name": "Филиал № 3 Республиканской библиотеки"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.6162323,
+          40.5900283
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Сумгаитский суперфосфатный завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.846396,
+          40.4007925
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Трамвайное депо, 82 Həsən Əliyev Küçəsi, Bakı, Азербайджан",
+        "name": "Убежище Трамвайного Депо"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8756092,
+          40.3907593
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Samir Xasiyev Parki, 58 Babək Prospekti, Bakı, Азербайджан",
+        "name": "Заброшенный Парк"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.859676199999996,
+          40.4207858
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.959593899999994,
+          40.3550414
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "9X45+2R9 Заброшенное Здание, Bakı, Азербайджан",
+        "name": "Заброшенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8882455,
+          40.407550199999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Предприятие"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8175981,
+          40.3927038
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Сальянские Казармы"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.0990076,
+          40.534984
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "G3MX+XJR Гянджлик, Летний корпус, Baku, Азербайджан",
+        "name": "Санаторий «Гянджлик»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.801533,
+          40.3466951
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Здание (Скорее Всего Отель)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.006561999999995,
+          41.5480777
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Водоочистительное сооружение"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8527266,
+          40.4224712
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Ангар"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.121575799999995,
+          51.451285
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Энгельсский завод «Спецавто»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.860707999999995,
+          40.4020286
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CV26+R92 Nərimanov Rayonu İnşaatçıların Mədəniyyət Evi, Fətəli Xan Xoyski, Bakı, Азербайджан",
+        "name": "Дом Культуры Строителей"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9687104,
+          40.386730799999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Подземная Линия Сооружений"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.3600686,
+          52.053247299999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "ул. Kалинина, 27, Вольск, Саратовская обл., Россия, 412913",
+        "name": "Вольский мясокомбинат"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.806463199999996,
+          40.3558976
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Концертный зал"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.4259979,
+          41.7028897
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "PC3G+595 Mərkəzi Xəstəxana, A315, Balakən, Азербайджан",
+        "name": "Больница В Балакенах"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8328391,
+          40.3747774
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Жилой Дом"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9640464,
+          40.352981299999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Огромное ГО СССР"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.477381799999996,
+          40.1813632
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "5FJG+GXR Old Karvansaray, Sangachal, Азербайджан",
+        "name": "Сангачальский караван-сарай"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9416632,
+          51.4788712
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Аэродром и авиаремонтная база"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.4398615,
+          40.2768474
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Karvansaray, Азербайджан",
+        "name": "Заброшенный Караван-сарай"
+      },
+      "type": "Feature",
+      "id": 135
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          48.680332799999995,
+          40.599660799999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Шемахинский винный завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8429772,
+          40.3901646
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "9RRV+36Q \"Dostluq\" kinoteatrı, Bakikhanov St, Baku, Азербайджан",
+        "name": "Кинотеатр «Дружба»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.905848,
+          40.408854
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Аварийное Х здание рядом с Хим. заводом"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.7205863,
+          40.3218886
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Кладбище грузовой техники"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.6708497,
+          40.4766124
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Кладбище Вагонов"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9850028,
+          40.5831875
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "HXMP+72C Нардаранский (Амбуранский) маяк, Bakı Dairəvi Yolu, Nardaran, Азербайджан",
+        "name": "Нардаранский Маяк"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8195906,
+          40.347524799999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Завод цветной металлургии"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.870688699999995,
+          40.5627652
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Санаторий «Гызылкум»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8921414,
+          40.417915699999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Лаборатория Завода"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.666090999999994,
+          40.361546
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенная Территория"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.006944,
+          40.580556
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенная гостиница времен СССР"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9371881,
+          40.371286
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Предприятие"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.129738499999995,
+          41.494963899999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Военная часть № 61615 «Победа»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8835372,
+          40.4008726
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшка За ЖД"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.1006005,
+          51.487026799999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Корпус Покровского вокзала"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8072855,
+          40.3806264
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "40 Mirəli Seyidov, Bakı, Азербайджан",
+        "name": "Недостроенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9880244,
+          40.457065
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "21 nömrəli Birləşmiş Şəhər Xəstəxanası, 1 Haqverdiyev küç,, Bakı, Азербайджан",
+        "name": "Объединённая городская больница № 21"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8305216,
+          40.3526333
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Баиловская котельная"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8919144,
+          40.4003857
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Мясокомбинат"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.150278,
+          51.466667
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Лаборатория «МХП Химволокно»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.968916899999996,
+          40.3921819
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1547306,
+          40.373782999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ангар"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9415534,
+          40.361241
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Текстильный Комбинат"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.1979749,
+          51.537349
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Бывшая Школа №4, ул. Титова, 2, Балашов, Саратовская обл., Россия, 412310",
+        "name": "Балашовская средняя Обрз. школа"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.435699,
+          39.638073999999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Пирс"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.802281,
+          40.3958967
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Убежище научно-хирургического центра"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.012045099999995,
+          51.5199698
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Саратовский военно-медицинский институт"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8343961,
+          40.3747378
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "9RFM+VQR Fantaziya hamamı, Dilara Aliyeva, Baku 1009, Азербайджан",
+        "name": "Баня «Фантазия»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8279122,
+          40.3648758
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостр. Заброшенное Гос. Учереждение"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.3973674,
+          40.0872732
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенная Военная База"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8458645,
+          40.4066883
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Отель"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9867819,
+          40.4199347
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Nizam əd-Dima məscidi, Surakhani, Bakixanov, Azerbaijan Surakhani, Azerbaijan, CX9P+XP, Азербайджан",
+        "name": "Заброшенная Мечеть В Амирджанах"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8085017,
+          40.3873634
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенный СПА салон"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.5803806,
+          42.9343091
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Республиканский Ипподром, Махачкала, Респ. Дагестан, Россия, 367018",
+        "name": "Дагестанский ипподром им. Кара Караева"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8088799,
+          40.3410235
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Мед. Отдел"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.4235858,
+          50.6935238
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Католическая кирха, Каменка, Саратовская обл., Россия, 412845",
+        "name": "Церковь святой Марии в селе Каменка"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.963342399999995,
+          51.5171729
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "ул. Огородная, 33Г, Саратов, Саратовская обл., Россия",
+        "name": "Корпус детской инфекционной больницы"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          42.5986903,
+          42.3271234
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "8HGX+RFW Sanatorium Tbilisi, Tskaltubo, Грузия",
+        "name": "Город Заброшенных Санаториев Цхалтубо"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.005251,
+          40.5358032
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "G2P4+84C Şamxal hamam, Азербайджан",
+        "name": "Шамхальская Баня"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.980408499999996,
+          41.3943466
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Военная База"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.0969372,
+          40.5356492
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "G3PW+7Q Gindes adına Uşaq Sümük Vərəm Sanatoriyası, Mardakan, Азербайджан",
+        "name": "Детский Костно-Туберкулёзный Санаторий"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8081363,
+          40.3740224
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Общежитие БГУ"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8181241,
+          40.404122699999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Частично Заброшенный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9385986,
+          40.388403
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Пустырь"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.3969838,
+          40.1024678
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшка Возле Тюрьмы"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8252032,
+          40.379075199999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.2192729,
+          41.4485806
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Военный Объект"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.561095099999996,
+          41.470729399999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "FHC6+7CX გარეჯის საბერეები, Iormughanlo, Грузия",
+        "name": "Пещерные монастыри Саберееби"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.377579,
+          40.8219
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Ангар"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9413163,
+          40.3604404
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Ангары"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9582219,
+          51.4906906
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Элеватор"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.475653799999996,
+          42.7757599
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Второй ракетный дивизион Р-14У"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.152778,
+          40.023610999999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заб. строй. площад. Азербайджанской АЭС"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.888146199999994,
+          40.405510799999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Фундамент Цеха"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9706261,
+          51.500540799999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бывший Саратовский биохимический завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.656062999999996,
+          40.327013
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Ангар"
+      },
+      "type": "Feature",
+      "id": 191
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.1598033,
+          51.480961099999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Энгельсский Дом Офицеров ФГУ, Летный городок, Энгельс, Саратовская обл., Россия, 413101",
+        "name": "Дом Офицеров Энгельс"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.266389,
+          46.352778
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Элистинский Керамзитовый Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.971305099999995,
+          40.3878146
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Предприятие (М/Б Уничтожено)"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8188021,
+          40.320746199999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Сабаильский Машиностроительный Завод"
+      },
+      "type": "Feature",
+      "id": 195
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          46.7214622,
+          42.5564592
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Хунзахская Больница"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.957587,
+          40.340615
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Теретория бывшей ККФ"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.045556,
+          40.586389
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бывший пионерский лагерь «Чайка»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.7582344,
+          51.9723051
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Балаковский завод волоконных материалов, 2, шоссе Саратовское, г. Балаково, Саратовская обл., Россия 413843, Балаково, Саратовская обл., Россия, 413843",
+        "name": "Балаковский завод волоконных материалов"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9793897,
+          40.3888622
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "9XQH+2C Завод имени Айдын Алиева Беле любов олар, Bakı, Азербайджан",
+        "name": "Возможно Заброшенный Завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          48.6531673,
+          40.6118659
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенное винохранилище"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8884587,
+          40.421444799999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CVCQ+H9G Bakı elektrik tökmə mmc, Bakı, Азербайджан",
+        "name": "Бакинский электро-литейный завод"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9349085,
+          40.388235699999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Ангары"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.853440799999994,
+          40.3988118
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенное Здание"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8868085,
+          40.5685177
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Пионер Лагерь"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          44.3805465,
+          41.695927499999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Русская школа в Манглиси"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.680824199999996,
+          42.8969345
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "8 цех завода Дагдизель. Цех по испытанию торпед., Россия, 368305",
+        "name": "Заброшенный Цех Завода Дагдизель"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8461395,
+          40.388689299999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенная Баня «Голубиная»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          45.9136556,
+          41.6188249
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Швейная фабрика в Сигнаге"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8509896,
+          40.421022699999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Бакинский Домостроительный Комбинат"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.3526915,
+          40.786467699999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Командный пункт Варшавского Договора"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8094536,
+          40.4131882
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Кинотеатр «Карабах»"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          47.0709344,
+          52.164952899999996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "Церковь Покрова Божьей Матери, Ключи, Саратовская обл., Россия, 412949",
+        "name": "Церковь Покрова Пресвятой Богородицы"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.895668799999996,
+          40.4048453
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Цехи"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.4907778,
+          40.5755556
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Окопы"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.197508899999995,
+          51.5308144
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Воинская часть № 21369"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.856848,
+          40.405158
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Убежище Гражданской Обороны"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.874972899999996,
+          40.3914012
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенные Офисные Помещения"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.8314477,
+          40.3977001
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенное Здания Спорт. Комплекса"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.0406026,
+          40.501697199999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "G22R+M6 Maştağa hamamı, Bakı, Азербайджан",
+        "name": "Баня Мирзы Гусейна"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.82207,
+          40.4061126
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Заброшенный Цех"
+      },
+      "type": "Feature",
+      "id": 221
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.897266699999996,
+          40.4204777
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Двухэтажное убежище"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          49.9648101,
+          40.4261664
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "address": "CXG7+FW7 pionerlər parkı, Baku, Азербайджан",
+        "name": "Парк «Пионеров»"
+      },
+      "type": "Feature",
+      "id": 222
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          43.808953699999996,
+          52.2553935
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Локомотивное Депо Ртищево"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1438808,
+          40.366696399999995
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Недостроенный Отель"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          50.1035253,
+          40.4915629
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "База ПВО"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          39.899404,
+          44.428356
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "name": "Шахты Пусковые Установки (Уничтожено)"
+      },
+      "type": "Feature"
+    }
+  ]
+}   "type": "Point"
       },
       "properties": {
         "name": "База ПВО"
