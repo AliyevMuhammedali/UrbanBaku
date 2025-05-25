@@ -6,7 +6,7 @@ const map = L.map('map', {
 
 // ===== Базовые слои =====
 
-// Спутник (без подписей)
+// Спутник без подписей
 const satellite = L.tileLayer(
   'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye',
@@ -14,7 +14,7 @@ const satellite = L.tileLayer(
   }
 );
 
-// Уличная карта от OpenStreetMap
+// Уличная карта от OSM
 const streets = L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors',
@@ -25,7 +25,7 @@ const streets = L.tileLayer(
 // По умолчанию — спутник
 satellite.addTo(map);
 
-// Контрол выбора
+// Переключатель между слоями
 const baseMaps = {
   "Спутник": satellite,
   "Улицы": streets
@@ -34,7 +34,7 @@ L.control.layers(baseMaps).addTo(map);
 
 // ===== Метки из GeoJSON =====
 
-fetch('locations.geojson')
+fetch('data/locations.geojson')
   .then(res => {
     if (!res.ok) throw new Error("Не удалось загрузить locations.geojson");
     return res.json();
