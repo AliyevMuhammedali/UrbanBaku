@@ -1,59 +1,54 @@
-// Создание карты и установка центра на Баку
-const map = L.map('map').setView([40.4093, 49.8671], 13);
+// Центр карты — Баку
+const map = L.map('map', {
+  center: [40.4093, 49.8671],
+  zoom: 13
+});
 
-// Спутниковый слой от Esri
+// ===== Базовые слои =====
+
+// Спутник (без подписей)
 const satellite = L.tileLayer(
-  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-  {
-    attribution: 'Tiles &copy; Esri',
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye',
     maxZoom: 19
   }
 );
 
-// Уличный слой от OpenStreetMap
+// Уличная карта от OpenStreetMap
 const streets = L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-  {
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors',
-    maxZoom: 19,
-    opacity: 0.5 // делаем слой полупрозрачным, чтобы видно было спутник
+    maxZoom: 19
   }
 );
 
-// Добавление гибридного слоя на карту
+// По умолчанию — спутник
 satellite.addTo(map);
-streets.addTo(map);
 
-// Контрол переключения базовых слоёв
+// Контрол выбора
 const baseMaps = {
   "Спутник": satellite,
   "Улицы": streets
 };
 L.control.layers(baseMaps).addTo(map);
 
-// Загрузка GeoJSON с метками заброшенных мест
+// ===== Метки из GeoJSON =====
+
 fetch('locations.geojson')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error("Не удалось загрузить locations.geojson");
-    }
-    return response.json();
+  .then(res => {
+    if (!res.ok) throw new Error("Не удалось загрузить locations.geojson");
+    return res.json();
   })
   .then(data => {
     L.geoJSON(data, {
       onEachFeature: function (feature, layer) {
-        const props = feature.properties || {};
-        const name = props.name || "Без названия";
-        const description = props.description || "";
+        const name = feature.properties?.name || "Без названия";
+        const description = feature.properties?.description || "";
         layer.bindPopup(`<strong>${name}</strong><br>${description}`);
       },
       pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-          title: feature.properties?.name || ""
-        });
+        return L.marker(latlng);
       }
     }).addTo(map);
   })
-  .catch(error => {
-    console.error("Ошибка при загрузке GeoJSON:", error);
-  });
+  .catch(err => console.error("Ошибка загрузки GeoJSON:", err));
