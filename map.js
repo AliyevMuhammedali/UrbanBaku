@@ -1,39 +1,24 @@
-// Центр карты — Баку
-const map = L.map('map', {
-  center: [40.4093, 49.8671],
-  zoom: 13
-});
+// Инициализация карты на Баку
+const map = L.map('map').setView([40.4093, 49.8671], 13);
 
-// ===== Базовые слои =====
+// OSM слой
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
 
-// Спутник без подписей
-const satellite = L.tileLayer(
-  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye',
-    maxZoom: 19
-  }
-);
-
-// Уличная карта от OSM
-const streets = L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors',
-    maxZoom: 19
-  }
-);
-
-// По умолчанию — спутник
-satellite.addTo(map);
-
-// Переключатель между слоями
-const baseMaps = {
-  "Спутник": satellite,
-  "Улицы": streets
-};
-L.control.layers(baseMaps).addTo(map);
-
-// ===== Метки из GeoJSON =====
-
+// Загрузка и отображение GeoJSON
+fetch('data/locations.geojson')
+  .then(response => response.json())
+  .then(data => {
+    L.geoJSON(data, {
+      onEachFeature: function (feature, layer) {
+        if (feature.properties && feature.properties.name) {
+          layer.bindPopup(`<strong>${feature.properties.name}</strong><br>${feature.properties.description || ''}`);
+        }
+      }
+    }).addTo(map);
+  });
 fetch('data/locations.geojson')
   .then(res => {
     if (!res.ok) throw new Error("Не удалось загрузить locations.geojson");
