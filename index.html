@@ -29,36 +29,17 @@
   <script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.js"></script>
   <script src="access.js"></script>
   <script src="map.js"></script>
-</body>
 
-  <button id="clearKeyBtn" onclick="clearKey()" style="
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  z-index: 9999;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-">
-  Очистить ключ
-</button>
+  <div id="loader">Загрузка карты...</div>
 
-<div id="accessSection">
+<div id="access-container">
   <input type="text" id="accessKey" placeholder="Введите ключ доступа" />
   <button id="submitBtn">Войти</button>
 </div>
 
-<button id="clearKeyBtn" style="display: none; position: fixed; bottom: 10px; left: 10px; z-index: 9999;">
-  Очистить ключи
-</button>
-
-<div id="loader">Загрузка...</div>
 <div id="map" style="display: none;"></div>
 
+<!-- Кнопка очистки -->
+<button id="clearKeyBtn" onclick="clearKey()">Очистить ключи</button>
+</body>
 </html>
