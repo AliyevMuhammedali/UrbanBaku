@@ -12,8 +12,17 @@ html, body {
 
 /* ===== Загрузочный экран ===== */
 #loader {
-  background: #000; /* Чёрный */
-  color: #fff;       /* Белый текст */
+  position: fixed;
+  z-index: 9999;
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+}
 }
 #loader img {
   width: 120px;
