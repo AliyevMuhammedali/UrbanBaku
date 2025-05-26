@@ -23,55 +23,46 @@ document.addEventListener("DOMContentLoaded", function () {
     "JW9UB4I7E0AU", "92Q9ZW1YK92K", "7W8CJ23W3T0G", "J55OJCPZFWQ1", "WUSZKF3A9E1H"
   ];
 
-  const adminKey = "KOLYUCHIY535";
-  const specialKey = "BAKUSTALKER1";
+  const adminKeys = ["BAKUSTALKER1", "KOLYUCHIY535"];
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
-  function requestAccess() {
-    const key = prompt("Введите ключ доступа:");
+  const accessSection = document.getElementById("accessSection");
+  const mapElement = document.getElementById("map");
+  const loader = document.getElementById("loader");
+  const clearKeyBtn = document.getElementById("clearKeyBtn");
 
-    if (!key) {
-      alert("Ключ не введён.");
-      requestAccess();
+  document.getElementById("submitBtn").addEventListener("click", function () {
+    const enteredKey = document.getElementById("accessKey").value.trim();
+
+    if (usedKeys.includes(enteredKey) && !adminKeys.includes(enteredKey)) {
+      alert("Этот ключ уже использован.");
       return;
     }
 
-    if (usedKeys.includes(key) && key !== specialKey && key !== adminKey) {
-      alert("Этот ключ уже использовался.");
-      requestAccess();
-      return;
-    }
-
-    if (validKeys.includes(key) || key === specialKey || key === adminKey) {
-      if (!usedKeys.includes(key) && key !== specialKey && key !== adminKey) {
-        usedKeys.push(key);
+    if (validKeys.includes(enteredKey) || adminKeys.includes(enteredKey)) {
+      if (!adminKeys.includes(enteredKey)) {
+        usedKeys.push(enteredKey);
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
 
-      document.getElementById("map").style.display = "block";
+      // Показать карту
+      mapElement.style.display = "block";
+      loader.style.display = "none";
+      accessSection.style.display = "none";
 
-      const loader = document.getElementById("loader");
-      if (loader) loader.style.display = "none";
-
-      // Показываем кнопку только если adminKey введён
-      if (key === adminKey) {
-        const clearBtn = document.getElementById("clearKeyBtn");
-        if (clearBtn) clearBtn.style.display = "block";
+      // Если KOLYUCHIY535 — показать кнопку очистки
+      if (enteredKey === "KOLYUCHIY535") {
+        clearKeyBtn.style.display = "block";
       }
     } else {
       alert("Неверный ключ.");
-      requestAccess();
     }
-  }
+  });
 
-  function clearKey() {
+  // Кнопка очистки ключей
+  clearKeyBtn.addEventListener("click", function () {
     localStorage.removeItem("usedKeys");
-    alert("Ключи очищены. Перезагрузка...");
+    alert("Ключи удалены.");
     location.reload();
-  }
-
-  const clearBtn = document.getElementById("clearKeyBtn");
-  if (clearBtn) clearBtn.onclick = clearKey;
-
-  requestAccess();
+  });
 });
