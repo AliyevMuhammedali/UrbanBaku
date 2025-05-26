@@ -61,6 +61,33 @@ document.addEventListener("DOMContentLoaded", function () {
       requestAccess();
     }
   }
+    const allowedKeys = [
+  "KEY1", "KEY2", "KEY3", // ← твои 100 обычных ключей
+  "BAKUSTALKER2010"
+];
 
+document.getElementById("submitBtn").addEventListener("click", function () {
+  const enteredKey = document.getElementById("accessKey").value;
+
+  if (allowedKeys.includes(enteredKey)) {
+    localStorage.setItem("userKey", enteredKey);
+    document.getElementById("map").style.display = "block";
+    const loader = document.getElementById("loader");
+    if (loader) loader.style.display = "none";
+
+    // Показываем кнопку очистки только если админский ключ
+    if (enteredKey === "BAKUSTALKER2010") {
+      document.getElementById("clearKeyBtn").style.display = "block";
+    }
+  } else {
+    alert("Неверный ключ доступа");
+  }
+});
+
+function clearKey() {
+  localStorage.removeItem("userKey");
+  alert("Ключи очищены. Перезагрузка...");
+  location.reload();
+}
   requestAccess();
 });
