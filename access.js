@@ -1,63 +1,70 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const validKeys = [
-    "QXHZIM5HG07D", "28XCCC8RR5R5", "ZMZJHF4RZYLP", "5VZEC94AMM20", "79JGPBDEKT3G",
-    "NC8DFVYOJ8YR", "9DR3GUYYG2GC", "CB3J8ZRG95FA", "WWYBIR29HTNE", "DKABRZP5T45B",
-    "BTK8MKQMHNEU", "UD7K2GEAKM43", "QSTL6HVV1EQ3", "O2QWT9S1X3P4", "QFEZNR9YBE3W",
-    "1V1QKTT0OBJD", "HCSNYH1XDTE9", "7VCXHND1UX88", "6NL2YJ3I4V5I", "S5O1E74CXD2L",
-    "P1YJZP0Z4D7B", "FLQ9F6KHLXAX", "Z0ZQGIMK4M2M", "3E42ESW7P2AJ", "HZJ3ERPTF2XY",
-    "C8BWZPQGKDKF", "C5WOV8A4UOL3", "OBLG4RIZCJX9", "NODZ1XK6OT91", "XAXSB7IV1E0P",
-    "CB5E8ED5CLCB", "WEFF9KJJJDAA", "92R3YNRWIKGO", "7ZKR1ZV6HHUP", "NB2OGLGAGMWJ",
-    "L1P10V0FOV2Y", "NDM10Y2X0KTP", "IC6BZNF0M6NB", "E1QX5CRNXZ8R", "GJD86AT2XUYM",
-    "FD7F03Z5TNTZ", "1XRIJFL8QPX6", "OWYH5FGXKM9Q", "Z1FJ91N31UJD", "LOEEI4O4ONRT",
-    "M3C9XAI8J5ZO", "KRO6KG9K2XFG", "LB69T12ZMFQ9", "D0FUKI6UEX7T", "OQ9S3UARJL6P",
-    "J67JY8QHZL45", "D3A16XYKZ9B2", "U1CTF60U35XY", "AV5R4AK9IE6K", "PGY6Z7G5N68U",
-    "WQNSPQFT1J3X", "MEJ5WS3MPJZB", "D2G9QEM0D8E0", "HPAY4RQD6W7I", "TZU77VD4UQU8",
-    "ZPKF7WN1XR65", "F24KZBOWQK0D", "B7UJ4WQULHK8", "JPZY1JZ46P35", "R9Z1XHZU2INX",
-    "NU5CGXJ2LKO9", "I0DTSB6XWRMP", "IR8R3DBSBDA3", "MLYQJFWZMXC1", "DO6U0YV6B83Y",
-    "P6E6UZ5KNKMG", "UBO8BGXILBCL", "LSTB1R0A6LKP", "JUML6J3EDLZ2", "2N9WEPTM8LDK",
-    "6VO8E7YIY6PK", "UOMYNH4XGAY9", "8T9CKO55VZ48", "DW32A9WSPP68", "RUPLUB8ZDRA2",
-    "DOESVXDF9NK5", "BNLOLS1NLNG8", "WQZ6IQ3P5SH2", "MZ9VBL7K0BQ1", "3KFF1U2AAQ8D",
-    "9BPQJND9V6AB", "RNO85FY6GLN5", "JW10LTURUMVP", "DXYR9V9PYU2Z", "1PRXBM1ZOH8X",
-    "YJTWZJKLZP6W", "O4F1X92QXRW5", "Y5DJ0DEDUV8D", "ZB7JXSN2H39J", "HJHZK2SBRVDI",
-    "CB1MHNYHMLT8", "W5AJ6S41QK7C", "FHPX45DSV7RN", "9E7P4KPZ5TZS", "RDHJZLLI3XWE",
-    "JW9UB4I7E0AU", "92Q9ZW1YK92K", "7W8CJ23W3T0G", "J55OJCPZFWQ1", "WUSZKF3A9E1H"
-  ];
+const validKeys = [
+  "3ZQR8W2NDXLP", "9YWB1F6XKZ3Q", "7TL9X8N3WJYD", "B5LJ2Q8W9XCR", "LXYQP49GJ7W3",
+  "R8XKF9J73LT2", "Z49F2N7LYWCB", "3VKTJ9XZL7N8", "YQJ74MXP9B2C", "WNCY83ZPLR5X",
+  "T3YRWZJ8M6LC", "9X7WY3QLJBTC", "QL3Z9XKFTY2M", "B6X9FMPZWTY3", "8TYPX3RL9KZQ",
+  "WJKC7YPZ39LF", "2ZCXQFYWL93T", "F7XBWQ8TMCZ2", "NXZ7WYQTJL43", "LMYQK93FT2ZX",
+  "TZW4NLX8QB93", "7FYQZ39XPWCL", "PQWJXZTY396L", "MY3QWLTX7ZC9", "Z4TNXPFQ8YL3",
+  "KL8PZYWQ3RNT", "QB9LYWTFXZ73", "F3XYNZ7QWCLT", "2MLXPJ9QTYZ3", "XJYWT9ZC83LQ",
+  "RZXPYQW83NLT", "M9LXYZT3WQF2", "YWFXZ93LQPTN", "8QLN3WT9ZXPY", "ZXYQTL93NPWF",
+  "LYWXTZP3NQF8", "TQXNYP3WZL94", "WFZPQLXN839T", "9WTPYXZ3LQNF", "LFY3TZPWXNQ9",
+  "ZTLWXQPNFY38", "NPZQWXYFT93L", "W3LXNYPQTZ9F", "TQ39LYXZWP8N", "XZWNQYTPFL93",
+  "FLP93QWTZNXY", "YZXW3LTP9QFN", "N3YTZPWXLFQ9", "XYTQZPNWFL93", "TPWYXZ3FLNQ9",
+  "ZFNQT3XYWPL9", "PQ3WXTNL9YFZ", "8ZXTNWL3PQFY", "YT93QXPWLZNF", "XLYTZQWPFN39",
+  "QLWNTXP93FYZ", "Z3FLQWPTXYN9", "TYXNWQZL3P9F", "93WTZPXLFYQN", "XN3YWFLPZQT9",
+  "NQTFY93XZPWL", "LQPNXW3TYZF9", "YWZ9F3TPQNLX", "PZLQXTYF39WN", "FZXPQLWT93YN",
+  "WYQPTZNXFL39", "TXYPNQZ3WL9F", "YQTLF3PXWNZ9", "FXPWZNQYTL93", "TZLXF93QWNPY",
+  "PXWTNQZ3FLY9", "LNYXPZQ3WT9F", "YWPXQZLTFN93", "TZPX93QNLFWY", "QLXN3YPZTFW9",
+  "9FXWTL3PQNYZ", "YTZPWX3LQN9F", "FPLQXWZTY93N", "3NYZFXPWQLT9", "QTPNLF3XWZY9",
+  "ZXTQPFNWL39Y", "YXW3ZNTL9QPF", "NLPZYWXTFQ39", "93WTPZLQXYFN", "TZYNPQL3WXF9",
+  "L3WPNYXTFZQ9", "F9WLPTXYQN3Z", "QLTYXZPWN3F9", "XWPFYZNQTL93", "WXYTZQFLP3N9",
+  "Z3YXFPLNWTQ9", "9FZLWPXTYQN3", "TXPZQYLNF39W", "YWTX3PQFLZN9", "LPX3WTFYZNQ9",
+  "NXFLZ93WTYPQ", "Z3TFPWXYQLN9", "F9NWPXLQZTY3", "PWZQF3TYLN9X", "YFL39PWQTZXN"
+];
 
-  const adminKeys = ["BAKUSTALKER1", "KOLYUCHIY535"];
-  const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
+const adminKey = "BAKUSTALKER1";
 
-  function requestAccess() {
-    const key = prompt("Введите ключ доступа:");
+function isKeyUsed(key) {
+  const used = JSON.parse(localStorage.getItem("usedKeys") || "[]");
+  return used.includes(key);
+}
 
-    if (!key) {
-      alert("Ключ не введён.");
-      requestAccess();
-      return;
-    }
+function markKeyAsUsed(key) {
+  const used = JSON.parse(localStorage.getItem("usedKeys") || "[]");
+  used.push(key);
+  localStorage.setItem("usedKeys", JSON.stringify(used));
+}
 
-    if (usedKeys.includes(key) && !adminKeys.includes(key)) {
-      alert("Этот ключ уже использовался.");
-      requestAccess();
-      return;
-    }
+function requestAccess() {
+  const key = prompt("Введите 12-значный ключ доступа:");
 
-    if (validKeys.includes(key) || adminKeys.includes(key)) {
-      if (!adminKeys.includes(key) && !usedKeys.includes(key)) {
-        usedKeys.push(key);
-        localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
-      }
-
-      document.getElementById("map").style.display = "block";
-
-      // 💥 Принудительно скрываем loader
-      const loader = document.getElementById("loader");
-      if (loader) loader.style.display = "none";
-
-    } else {
-      alert("Неверный ключ.");
-      requestAccess();
-    }
+  if (!key || key.length < 12) {
+    alert("Неверный формат ключа.");
+    requestAccess();
+    return;
   }
 
+  if (key === adminKey) {
+    document.getElementById("map").style.display = "block";
+    return;
+  }
+
+  if (isKeyUsed(key)) {
+    alert("Этот ключ уже использован.");
+    requestAccess();
+    return;
+  }
+
+  if (!validKeys.includes(key)) {
+    alert("Неверный ключ.");
+    requestAccess();
+    return;
+  }
+
+  markKeyAsUsed(key);
+  document.getElementById("map").style.display = "block";
+}
+
+window.onload = () => {
+  document.getElementById("map").style.display = "none";
   requestAccess();
-});
+};
