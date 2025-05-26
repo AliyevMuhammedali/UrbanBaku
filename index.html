@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Карта заброшек Баку</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Abandoned Baku</title>
+  <link rel="icon" href="img/logo.png" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.css" />
 </head>
 <body>
+  <!-- Загрузочный экран -->
+  <div id="loader">
+    <img src="img/logo.png" alt="Логотип" />
+    <h1>Загрузка карты…</h1>
+  </div>
+
+  <!-- Карта -->
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.js"></script>
+  <script src="access.js"></script>
   <script src="map.js"></script>
 </body>
 </html>
