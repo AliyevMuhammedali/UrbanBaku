@@ -21,7 +21,7 @@ const validKeys = [
   "NXFLZ93WTYPQ", "Z3TFPWXYQLN9", "F9NWPXLQZTY3", "PWZQF3TYLN9X", "YFL39PWQTZXN"
 ];
 
-const adminKey = "BAKUSTALKER2025";
+const adminKey = "BAKUSTALKER1";
 
 function isKeyUsed(key) {
   const used = JSON.parse(localStorage.getItem("usedKeys") || "[]");
