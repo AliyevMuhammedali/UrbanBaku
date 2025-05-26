@@ -1,7 +1,6 @@
 document.getElementById("map").style.display = "block";
 
-// ===== Инициализация карты =====
-const map = L.map('map', {
+let map = L.map('map', {
   center: [40.4093, 49.8671],
   zoom: 13
 });
@@ -28,17 +27,6 @@ const baseLayers = {
 };
 L.control.layers(baseLayers).addTo(map);
 
-// Пример использования Leaflet Search
-var searchControl = new L.Control.Search({
-  layer: geojsonLayer,
-  propertyName: 'name',
-  zoom: 18,
-  initial: false,
-  hideMarkerOnCollapse: true
-});
-map.addControl(searchControl);
-
-
 // ===== Загрузка и отображение GeoJSON =====
 fetch('data/locations.geojson')
   .then(response => response.json())
@@ -57,10 +45,11 @@ fetch('data/locations.geojson')
       propertyName: 'name',
       marker: false,
       moveToLocation: function (latlng, title, map) {
-        map.setView(latlng, 17); // Увеличить при переходе
+        map.setView(latlng, 17);
       }
     });
     searchControl.addTo(map);
+
     // Удалить загрузчик
     document.getElementById("loader").style.display = "none";
   })
