@@ -1,6 +1,7 @@
 document.getElementById("map").style.display = "block";
 
-let map = L.map('map', {
+// ===== Инициализация карты =====
+const map = L.map('map', {
   center: [40.4093, 49.8671],
   zoom: 13
 });
@@ -45,7 +46,7 @@ fetch('data/locations.geojson')
       propertyName: 'name',
       marker: false,
       moveToLocation: function (latlng, title, map) {
-        map.setView(latlng, 17);
+        map.setView(latlng, 17); // Увеличить при переходе
       }
     });
     searchControl.addTo(map);
