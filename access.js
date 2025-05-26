@@ -26,39 +26,44 @@ document.addEventListener("DOMContentLoaded", function () {
   const adminKeys = ["BAKUSTALKER1", "KOLYUCHIY535"];
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
-  const submitBtn = document.getElementById("submitBtn");
-  const accessInput = document.getElementById("accessKey");
-  const clearBtn = document.getElementById("clearKeyBtn");
+  const accessSection = document.getElementById("accessSection");
+  const mapElement = document.getElementById("map");
+  const loader = document.getElementById("loader");
+  const clearKeyBtn = document.getElementById("clearKeyBtn");
 
-  submitBtn.addEventListener("click", function () {
-    const enteredKey = accessInput.value.trim();
+  accessSection.style.display = "block";
+  loader.style.display = "none";
+  mapElement.style.display = "none";
 
-    if (adminKeys.includes(enteredKey) || validKeys.includes(enteredKey)) {
-      if (!adminKeys.includes(enteredKey) && usedKeys.includes(enteredKey)) {
-        alert("Этот ключ уже использован.");
-        return;
-      }
+  document.getElementById("submitBtn").addEventListener("click", function () {
+    const enteredKey = document.getElementById("accessKey").value.trim();
 
+    if (usedKeys.includes(enteredKey) && !adminKeys.includes(enteredKey)) {
+      alert("Этот ключ уже использован.");
+      return;
+    }
+
+    if (validKeys.includes(enteredKey) || adminKeys.includes(enteredKey)) {
       if (!adminKeys.includes(enteredKey)) {
         usedKeys.push(enteredKey);
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
 
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("access-container").style.display = "none";
-      document.getElementById("map").style.display = "block";
+      mapElement.style.display = "block";
+      loader.style.display = "none";
+      accessSection.style.display = "none";
 
       if (enteredKey === "KOLYUCHIY535") {
-        clearBtn.style.display = "block";
+        clearKeyBtn.style.display = "block";
       }
     } else {
-      alert("Неверный ключ");
+      alert("Неверный ключ.");
     }
   });
 
-  window.clearKey = function () {
+  clearKeyBtn.addEventListener("click", function () {
     localStorage.removeItem("usedKeys");
-    alert("Ключи очищены. Перезагрузка страницы...");
+    alert("Ключи удалены.");
     location.reload();
-  };
+  });
 });
