@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "JW9UB4I7E0AU", "92Q9ZW1YK92K", "7W8CJ23W3T0G", "J55OJCPZFWQ1", "WUSZKF3A9E1H"
   ];
 
-  const adminKey = "BAKUSTALKER1";
+  const adminKey = "KOLYUCHIY535";
+  const specialKey = "BAKUSTALKER1";
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
   function requestAccess() {
@@ -35,59 +36,42 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    if (usedKeys.includes(key) && key !== adminKey) {
+    if (usedKeys.includes(key) && key !== specialKey && key !== adminKey) {
       alert("Этот ключ уже использовался.");
       requestAccess();
       return;
     }
 
-    if (validKeys.includes(key) || key === adminKey) {
-      if (key !== adminKey && !usedKeys.includes(key)) {
+    if (validKeys.includes(key) || key === specialKey || key === adminKey) {
+      if (!usedKeys.includes(key) && key !== specialKey && key !== adminKey) {
         usedKeys.push(key);
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
 
       document.getElementById("map").style.display = "block";
 
-      // 💥 Принудительно скрываем loader
       const loader = document.getElementById("loader");
       if (loader) loader.style.display = "none";
 
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("map").style.display = "block";
-
+      // Показываем кнопку только если adminKey введён
+      if (key === adminKey) {
+        const clearBtn = document.getElementById("clearKeyBtn");
+        if (clearBtn) clearBtn.style.display = "block";
+      }
     } else {
       alert("Неверный ключ.");
       requestAccess();
     }
   }
-    const allowedKeys = [
-  "KEY1", "KEY2", "KEY3", // ← твои 100 обычных ключей
-  "BAKUSTALKER2010"
-];
 
-document.getElementById("submitBtn").addEventListener("click", function () {
-  const enteredKey = document.getElementById("accessKey").value;
-
-  if (allowedKeys.includes(enteredKey)) {
-    localStorage.setItem("userKey", enteredKey);
-    document.getElementById("map").style.display = "block";
-    const loader = document.getElementById("loader");
-    if (loader) loader.style.display = "none";
-
-    // Показываем кнопку очистки только если админский ключ
-    if (enteredKey === "BAKUSTALKER2010") {
-      document.getElementById("clearKeyBtn").style.display = "block";
-    }
-  } else {
-    alert("Неверный ключ доступа");
+  function clearKey() {
+    localStorage.removeItem("usedKeys");
+    alert("Ключи очищены. Перезагрузка...");
+    location.reload();
   }
-});
 
-function clearKey() {
-  localStorage.removeItem("userKey");
-  alert("Ключи очищены. Перезагрузка...");
-  location.reload();
-}
+  const clearBtn = document.getElementById("clearKeyBtn");
+  if (clearBtn) clearBtn.onclick = clearKey;
+
   requestAccess();
 });
