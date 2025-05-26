@@ -26,9 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const adminKeys = ["BAKUSTALKER1", "KOLYUCHIY535"];
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
-  localStorage.clear();
-
-
   function requestAccess() {
     const key = prompt("Введите ключ доступа:");
 
