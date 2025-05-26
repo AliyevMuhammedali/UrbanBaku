@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    if (usedKeys.includes(key) && key !== adminKey) {
+    if (usedKeys.includes(key) && key !== adminKeys) {
       alert("Этот ключ уже использовался.");
       requestAccess();
       return;
