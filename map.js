@@ -28,6 +28,17 @@ const baseLayers = {
 };
 L.control.layers(baseLayers).addTo(map);
 
+// Пример использования Leaflet Search
+var searchControl = new L.Control.Search({
+  layer: geojsonLayer,
+  propertyName: 'name',
+  zoom: 18,
+  initial: false,
+  hideMarkerOnCollapse: true
+});
+map.addControl(searchControl);
+
+
 // ===== Загрузка и отображение GeoJSON =====
 fetch('data/locations.geojson')
   .then(response => response.json())
@@ -50,19 +61,6 @@ fetch('data/locations.geojson')
       }
     });
     searchControl.addTo(map);
-
-  var searchControl = new L.Control.Search({
-  layer: myLayer, // например, слой с точками
-  propertyName: 'name', // поле для поиска
-  marker: false,
-  moveToLocation: function (latlng, title, map) {
-    map.setView(latlng, 17); // zoom при выборе
-  }
-});
-
-searchControl.addTo(map);
-
-
     // Удалить загрузчик
     document.getElementById("loader").style.display = "none";
   })
