@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "JW9UB4I7E0AU", "92Q9ZW1YK92K", "7W8CJ23W3T0G", "J55OJCPZFWQ1", "WUSZKF3A9E1H"
   ];
 
-  const adminKeys = ["BAKUSTALKER1", "KOLYUCHIY535"];
+  const adminKey = "BAKUSTALKER1";
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
   function requestAccess() {
@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    if (usedKeys.includes(key) && key !== adminKeys) {
+    if (usedKeys.includes(key) && key !== adminKey) {
       alert("Этот ключ уже использовался.");
       requestAccess();
       return;
     }
 
-   if (validKeys.includes(key) || adminKeys.includes(key)) {
-      if (!adminKeys.includes(key) && !usedKeys.includes(key)) {
+    if (validKeys.includes(key) || key === adminKey) {
+      if (key !== adminKey && !usedKeys.includes(key)) {
         usedKeys.push(key);
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
