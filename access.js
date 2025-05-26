@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
   const clearKeyBtn = document.getElementById("clearKeyBtn");
 
+  accessSection.style.display = "block";
+  loader.style.display = "none";
+  mapElement.style.display = "none";
+
   document.getElementById("submitBtn").addEventListener("click", function () {
     const enteredKey = document.getElementById("accessKey").value.trim();
 
@@ -45,12 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
 
-      // Показать карту
       mapElement.style.display = "block";
       loader.style.display = "none";
       accessSection.style.display = "none";
 
-      // Если KOLYUCHIY535 — показать кнопку очистки
       if (enteredKey === "KOLYUCHIY535") {
         clearKeyBtn.style.display = "block";
       }
@@ -59,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Кнопка очистки ключей
   clearKeyBtn.addEventListener("click", function () {
     localStorage.removeItem("usedKeys");
     alert("Ключи удалены.");
