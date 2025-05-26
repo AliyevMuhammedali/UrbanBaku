@@ -1,6 +1,9 @@
 abandoned-baku-map/
 ├── index.html
 ├── map.js
+├── access.js
 ├── style.css
-└── data/
-    └── locations.geojson
+├── data/
+│   └── locations.geojson
+└── img/
+    └── logo.png
