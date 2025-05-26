@@ -48,6 +48,20 @@ function requestAccess() {
     return;
   }
 
+  if (validKeys.includes(key)) {
+  usedKeys.push(key);
+  localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
+  document.getElementById("map").style.display = "block";
+
+  // 💥 ВСТАВЬ ЭТО:
+  const loader = document.getElementById("loader");
+  if (loader) loader.style.display = "none";
+
+} else {
+  alert("Неверный ключ.");
+  requestAccess();
+}
+  
   if (isKeyUsed(key)) {
     alert("Этот ключ уже использован.");
     requestAccess();
