@@ -53,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const loader = document.getElementById("loader");
       if (loader) loader.style.display = "none";
 
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("map").style.display = "block";
+
     } else {
       alert("Неверный ключ.");
       requestAccess();
