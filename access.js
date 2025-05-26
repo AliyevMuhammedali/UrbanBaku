@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const validKeys = [
-    "QXHZIM5HG07D", "28XCCC8RR5R5", "ZMZJHF4RZYLP", "5VZEC94AMM20", "79JGPBDEKT3G",
+    "QXHZIM5HR07D", "28XCCC8RR5R5", "ZMZJHF4RZYLP", "5VZEC94AMM20", "79JGPBDEKT3G",
     "NC8DFVYOJ8YR", "9DR3GUYYG2GC", "CB3J8ZRG95FA", "WWYBIR29HTNE", "DKABRZP5T45B",
     "BTK8MKQMHNEU", "UD7K2GEAKM43", "QSTL6HVV1EQ3", "O2QWT9S1X3P4", "QFEZNR9YBE3W",
     "1V1QKTT0OBJD", "HCSNYH1XDTE9", "7VCXHND1UX88", "6NL2YJ3I4V5I", "S5O1E74CXD2L",
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "JW9UB4I7E0AU", "92Q9ZW1YK92K", "7W8CJ23W3T0G", "J55OJCPZFWQ1", "WUSZKF3A9E1H"
   ];
 
-  const adminKeys = ["BAKUSTALKER1", "KOLYUCHIY535"];
+  const adminKey = "BAKUSTALKER1";
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
   function requestAccess() {
@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    if (usedKeys.includes(key) && !adminKeys.includes(key)) {
+    if (usedKeys.includes(key) && key !== adminKey) {
       alert("Этот ключ уже использовался.");
       requestAccess();
       return;
     }
 
-    if (validKeys.includes(key) || adminKeys.includes(key)) {
-      if (!adminKeys.includes(key) && !usedKeys.includes(key)) {
+    if (validKeys.includes(key) || key === adminKey) {
+      if (key !== adminKey && !usedKeys.includes(key)) {
         usedKeys.push(key);
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
