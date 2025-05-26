@@ -1,13 +1,42 @@
-// Инициализация карты на Баку
-const map = L.map('map').setView([40.4093, 49.8671], 13);
+// ===== Инициализация карты на Баку =====
+const map = L.map('map', {
+  center: [40.4093, 49.8671],
+  zoom: 13
+});
 
-// OSM слой
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// ===== Базовые слои =====
+
+// Улицы (OSM)
+const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+});
 
-// Загрузка и отображение GeoJSON
+// Спутник (Esri)
+const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 19,
+  attribution: 'Tiles © Esri'
+});
+
+// Тёмная тема (CartoDB Dark)
+const dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  maxZoom: 19,
+  attribution: '&copy; CartoDB',
+  subdomains: 'abcd'
+});
+
+// Добавим слой по умолчанию
+streets.addTo(map);
+
+// ===== Переключатель слоёв =====
+const baseLayers = {
+  "🗺 Улицы": streets,
+  "🛰 Спутник": satellite,
+  "🌙 Тёмная тема": dark
+};
+L.control.layers(baseLayers).addTo(map);
+
+// ===== Загрузка и отображение GeoJSON =====
 fetch('data/locations.geojson')
   .then(response => response.json())
   .then(data => {
@@ -18,22 +47,5 @@ fetch('data/locations.geojson')
         }
       }
     }).addTo(map);
-  });
-fetch('data/locations.geojson')
-  .then(res => {
-    if (!res.ok) throw new Error("Не удалось загрузить locations.geojson");
-    return res.json();
   })
-  .then(data => {
-    L.geoJSON(data, {
-      onEachFeature: function (feature, layer) {
-        const name = feature.properties?.name || "Без названия";
-        const description = feature.properties?.description || "";
-        layer.bindPopup(`<strong>${name}</strong><br>${description}`);
-      },
-      pointToLayer: function (feature, latlng) {
-        return L.marker(latlng);
-      }
-    }).addTo(map);
-  })
-  .catch(err => console.error("Ошибка загрузки GeoJSON:", err));
+  .catch(error => console.error("Ошибка загрузки GeoJSON:", error));
