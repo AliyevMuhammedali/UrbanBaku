@@ -1,7 +1,7 @@
 document.getElementById("map").style.display = "block";
 
 // ===== Инициализация карты =====
-const map = L.map('map', {
+const myMap = L.map('map', {
   center: [40.4093, 49.8671],
   zoom: 13
 });
@@ -19,14 +19,14 @@ const dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}
   attribution: '&copy; CartoDB',
   subdomains: 'abcd'
 });
-streets.addTo(map);
+streets.addTo(myMap);
 
 const baseLayers = {
   "🗺 Улицы": streets,
   "🛰 Спутник": satellite,
   "🌙 Тёмная тема": dark
 };
-L.control.layers(baseLayers).addTo(map);
+L.control.layers(baseLayers).addTo(myMap);
 
 // ===== Загрузка и отображение GeoJSON =====
 fetch('data/locations.geojson')
@@ -38,7 +38,7 @@ fetch('data/locations.geojson')
           layer.bindPopup(`<strong>${feature.properties.name}</strong><br>${feature.properties.description || ''}`);
         }
       }
-    }).addTo(map);
+    }).addTo(myMap);
 
     // Добавление поиска
     const searchControl = new L.Control.Search({
@@ -46,10 +46,10 @@ fetch('data/locations.geojson')
       propertyName: 'name',
       marker: false,
       moveToLocation: function (latlng, title, map) {
-        map.setView(latlng, 17); // Увеличить при переходе
+        myMap.setView(latlng, 17); // Увеличить при переходе
       }
     });
-    searchControl.addTo(map);
+    searchControl.addTo(myMap);
 
     // Удалить загрузчик
     document.getElementById("loader").style.display = "none";
