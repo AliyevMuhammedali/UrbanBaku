@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "JW9UB4I7E0AU", "92Q9ZW1YK92K", "7W8CJ23W3T0G", "J55OJCPZFWQ1", "WUSZKF3A9E1H"
   ];
 
-  const adminKey = "BAKUSTALKER1";
+  const adminKey = "BAKUSTALKER1", "KOLYUCHIY535";
   const usedKeys = JSON.parse(localStorage.getItem("usedKeys")) || [];
 
   localStorage.clear();
