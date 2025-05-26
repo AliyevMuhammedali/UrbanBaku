@@ -1,67 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abandoned Baku</title>
-  <link rel="icon" href="img/logo.png" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Urban Baku</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000 !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      color: #fff !important;
+    }
 
-  <!-- Leaflet Control Search -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-search@2.9.8/dist/leaflet-search.min.css" />
-  <script src="https://unpkg.com/leaflet-control-search@2.9.8/dist/leaflet-search.min.js"></script>
-
-  <!-- Карта -->
-  <script src="map.js" defer></script>
-  <!-- Доступ -->
-  <script src="access.js" defer></script>
-
-<style>
-  #map {
-    width: 100%;
-    height: 100vh;
-    display: none;
-  }
-
-  #loader {
-    position: fixed;
-    z-index: 9999;
-    background: white;
-    width: 100%;
-    height: 100%;
-  }
-  #loader {
-    background: #000 !important; /* чёрный фон */
-    color: #fff !important;      /* белый текст */
-  }
-
-  #loader img {
-    border: 2px solid #fff;
-    border-radius: 50%;
-  }
-</style>
-
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.css" />
-<script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.js"></script>
+    #loader img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-
-  <!-- Загрузочный экран -->
+<body>
   <div id="loader">
-    <img src="img/logo.png" alt="Логотип" />
-    <h1>Загрузка карты…</h1>
+    <img src="42df9caf-6b9f-4ca8-bdd1-efaf7847971c.png" alt="Логотип">
+    <p>Загрузка карты…</p>
   </div>
 
-  <!-- Карта -->
-  <div id="map"></div>
+  <div id="map" style="display: none;"></div>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet-control-search/dist/leaflet-search.min.js"></script>
+  <script src="map.js"></script>
   <script src="access.js"></script>
-  <script src="map_.js"></script>
 </body>
 </html>
