@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    if (validKeys.includes(key) || key === adminKey) {
-      if (key !== adminKey && !usedKeys.includes(key)) {
+   if (validKeys.includes(key) || adminKeys.includes(key)) {
+      if (!adminKeys.includes(key) && !usedKeys.includes(key)) {
         usedKeys.push(key);
         localStorage.setItem("usedKeys", JSON.stringify(usedKeys));
       }
