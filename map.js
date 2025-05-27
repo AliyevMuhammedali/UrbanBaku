@@ -74,3 +74,39 @@ map.on('locationfound', function (e) {
 map.on('locationerror', function (e) {
   console.warn("Геолокация не доступна:", e.message);
 });
+
+ // ===== Кнопка "Моё местоположение" =====
+const locateControl = L.control({ position: 'topleft' });
+
+locateControl.onAdd = function (map) {
+  const button = L.DomUtil.create('button', 'locate-button');
+  button.title = 'Показать моё местоположение';
+  button.innerHTML = '📍';
+
+  L.DomEvent.on(button, 'click', function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    map.locate({ setView: true, maxZoom: 16 });
+
+    map.once('locationfound', function (e) {
+      L.marker(e.latlng).addTo(map)
+        .bindPopup("Вы здесь").openPopup();
+
+      L.circle(e.latlng, {
+        radius: e.accuracy,
+        color: '#136aec',
+        fillOpacity: 0.1
+      }).addTo(map);
+    });
+
+    map.once('locationerror', function (e) {
+      alert("Не удалось определить местоположение: " + e.message);
+    });
+  });
+
+  return button;
+};
+
+locateControl.addTo(map);
+
