@@ -58,3 +58,19 @@ fetch('data/locations.geojson')
     console.error("Ошибка загрузки GeoJSON:", error);
     alert("Ошибка загрузки данных.");
   });
+
+ // ===== Определение и отображение местоположения пользователя =====
+map.locate({ setView: true, maxZoom: 16 });
+
+map.on('locationfound', function (e) {
+  // Маркер на местоположении
+  const userMarker = L.marker(e.latlng).addTo(map)
+    .bindPopup("Вы здесь").openPopup();
+
+  // Радиус точности
+  L.circle(e.latlng, { radius: e.accuracy, color: '#136aec', fillOpacity: 0.1 }).addTo(map);
+});
+
+map.on('locationerror', function (e) {
+  console.warn("Геолокация не доступна:", e.message);
+});
