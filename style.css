@@ -48,3 +48,24 @@ html, body {
 .locate-button:hover {
   background: #eee;
 }
+
+ .locate-button {
+  background: white;
+  border: 2px solid #666;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.locate-button:hover {
+  background: #eee;
+}
+
+select#transport-select {
+  margin-top: 5px;
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
