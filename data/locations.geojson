@@ -4,32 +4,6 @@
     {
       "geometry": {
         "coordinates": [
-          49.881851399999995,
-          40.3999404
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "name": "Дом"
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
-          50.1591637,
-          40.3784822
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "name": "Работа"
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
           48.9169444,
           40.7602778
         ],
@@ -510,7 +484,8 @@
       "properties": {
         "name": "Заброшенный Корпус Больницы"
       },
-      "type": "Feature"
+      "type": "Feature",
+      "id": 38
     },
     {
       "geometry": {
@@ -3204,7 +3179,8 @@
       "properties": {
         "name": "Заброшка За ЖД"
       },
-      "type": "Feature"
+      "type": "Feature",
+      "id": 242
     },
     {
       "geometry": {
@@ -4548,7 +4524,8 @@
       "properties": {
         "name": "Заброшенные Офисные Помещения"
       },
-      "type": "Feature"
+      "type": "Feature",
+      "id": 344
     },
     {
       "geometry": {
