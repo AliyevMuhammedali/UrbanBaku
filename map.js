@@ -33,8 +33,45 @@ const baseLayers = {
 L.control.layers(baseLayers).addTo(map);
 
 // ===== Переменная для маршрута =====
+function updateTransport(select) {
+  selectedTransport = select.value;
+}
+
 let routingControl = null;
 let selectedTransport = 'foot'; // по умолчанию — пешком
+
+function routeTo(latlng) {
+  if (routingControl) {
+    map.removeControl(routingControl);
+  }
+
+  if (!navigator.geolocation) {
+    alert("Геолокация не поддерживается вашим браузером");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(position => {
+    const userLatLng = L.latLng(position.coords.latitude, position.coords.longitude);
+
+    routingControl = L.Routing.control({
+      waypoints: [
+        userLatLng,
+        L.latLng(latlng[0], latlng[1])
+      ],
+      router: L.Routing.osrmv1({
+        serviceUrl: `https://router.project-osrm.org/route/v1/${selectedTransport}`
+      }),
+      lineOptions: {
+        styles: [{ color: 'cyan', weight: 5 }]
+      },
+      show: false,
+      addWaypoints: false
+    }).addTo(map);
+  }, () => {
+    alert("Не удалось получить ваше местоположение.");
+  });
+}
+
 
 // ===== Загрузка и отображение GeoJSON =====
 fetch('data/locations.geojson')
