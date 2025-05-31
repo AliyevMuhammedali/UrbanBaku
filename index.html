@@ -29,6 +29,12 @@
 <!-- Leaflet Routing Machine JS -->
 <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.min.js"></script>
 
+  <select onchange="updateTransport(this)">
+  <option value="foot">🚶 Пешком</option>
+  <option value="car">🚗 Авто</option>
+  <option value="bike">🚲 Велосипед</option>
+</select>
+
 </head>
 <body>
   <!-- Загрузочный экран -->
