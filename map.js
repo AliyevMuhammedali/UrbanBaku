@@ -169,7 +169,121 @@ locateControl.onAdd = function (map) {
     });
     map.once('locationerror', function (e) {
       alert("Не удалось получить местоположение: " + e.message);
-    });
+ // ===== Инициализация карты на Баку =====
+const map = L.map('map', {
+  center: [40.4093, 49.8671],
+  zoom: 13
+});
+
+// ===== Слои =====
+const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors'
+});
+
+const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 19,
+  attribution: 'Tiles © Esri'
+});
+
+const dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  maxZoom: 19,
+  attribution: '&copy; CartoDB',
+  subdomains: 'abcd'
+});
+
+streets.addTo(map);
+
+const baseLayers = {
+  "🗺 Улицы": streets,
+  "🛰 Спутник": satellite,
+  "🌙 Тёмная тема": dark
+};
+L.control.layers(baseLayers).addTo(map);
+
+// ===== Переменные для маршрута =====
+let routingControl = null;
+let selectedTransport = 'foot';
+
+// ===== Обработка смены транспорта =====
+function updateTransport(select) {
+  selectedTransport = select.value;
+}
+
+// ===== Построение маршрута =====
+function routeTo(latlng) {
+  if (routingControl) {
+    map.removeControl(routingControl);
+  }
+
+  if (!navigator.geolocation) {
+    alert("Ваш браузер не поддерживает геолокацию.");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(position => {
+    const userLatLng = L.latLng(position.coords.latitude, position.coords.longitude);
+
+    routingControl = L.Routing.control({
+      waypoints: [
+        userLatLng,
+        L.latLng(latlng[0], latlng[1])
+      ],
+      router: L.Routing.osrmv1({
+        serviceUrl: `https://router.project-osrm.org/route/v1/${selectedTransport}`
+      }),
+      lineOptions: {
+        styles: [{ color: 'cyan', weight: 5 }]
+      },
+      createMarker: () => null,
+      show: false,
+      addWaypoints: false
+    }).addTo(map);
+  }, () => {
+    alert("Не удалось получить ваше местоположение.");
+  });
+}
+
+// ===== Загрузка GeoJSON =====
+fetch('data/locations.geojson')
+  .then(response => response.json())
+  .then(data => {
+    const geoJsonLayer = L.geoJSON(data, {
+      onEachFeature: function (feature, layer) {
+        const props = feature.properties;
+        const latlng = feature.geometry.coordinates.slice().reverse();
+
+        const popup = `
+          <strong>${props.name}</strong><br>
+          ${props.description || ''}<br><br>
+          <button onclick="routeTo([${latlng}])">📍 Проложить маршрут</button>
+        `;
+        layer.bindPopup(popup);
+      }
+    }).addTo(map);
+
+    // Добавим поиск по названиям
+    new L.Control.Search({
+      layer: geoJsonLayer,
+      propertyName: 'name',
+      zoom: 17,
+      initial: false,
+      hideMarkerOnCollapse: true
+    }).addTo(map);
+  })
+  .catch(error => console.error("Ошибка загрузки GeoJSON:", error));
+
+// ===== Геолокация пользователя =====
+map.locate({ setView: false, watch: false });
+map.on("locationfound", (e) => {
+  L.circleMarker(e.latlng, {
+    radius: 6,
+    color: "blue",
+    fillColor: "#30f",
+    fillOpacity: 0.8
+  }).addTo(map).bindPopup("Вы здесь").openPopup();
+});
+   });
   });
   return button;
 };
